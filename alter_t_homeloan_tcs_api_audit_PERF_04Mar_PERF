@@ -1,0 +1,2 @@
+ALTER TABLE t_homeloan_tcs_api_audit ADD (credit_score INT DEFAULT NULL AFTER tcs_application_form_no COMMENT 'User credit score value',
+eligible_for_loan BIT(1) DEFAULT NULL AFTER credit_score COMMENT 'User is eligible/in-eligible for loan based on the credit score value');
